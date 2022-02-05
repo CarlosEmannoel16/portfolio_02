@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding:0;
+  box-sizing: border-box;
  
 }
 
@@ -94,10 +95,15 @@ body{
 
 
 .area-portfolio{
+  display: flex;
+  flex-direction: column;
   height: auto;
   width: 100%;
   background-color: #212121;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .titles-area{
   width: 100%;
@@ -147,13 +153,20 @@ body{
   cursor: pointer;
 
 }
-
+.area-limit{
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+}
 .body-portfolio{
   height: 50%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .body-portfolio .project{
@@ -165,7 +178,7 @@ body{
 .image-project {
   width: 100%;
   height: 80%;
-  background-color: red;
+
   margin-top: 20px;
 }
 .image-project img{
@@ -195,9 +208,14 @@ body{
 /*  AREA RESUME*/
 
 .area-resume{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #212121;
+  margin-top: 50px;
 }
 
 .body-resume{
@@ -235,8 +253,40 @@ body{
 }
 .card{
   width: 100%;
-  height: 200px;
-  border-radius: 5px;
+  height: 220px;
+  border-radius: 8px;
   background-color: #363232;
   margin-top: 20px;
+  padding: 20px;
 }
+
+.title-card{
+  color: #85c807;
+  padding: 5px;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.date-card{
+  padding: 5px;
+  font-weight: 700;
+}
+
+.body-card{
+  padding: 5px;
+  color: #838282;
+}
+
+.location-card{
+  padding: 20px 5px;
+  color: #838282;
+}
+
+/*  estilizando SOBRE Mim*/
+
+.area-about-me{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
